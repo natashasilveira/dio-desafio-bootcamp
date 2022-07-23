@@ -7,10 +7,10 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Curso curso = new Curso();
-        curso.setTitulo("curso java");
-        curso.setDescricao("descrição curso java");
-        curso.setCargaHoraria(8);
+        Curso curso1 = new Curso();
+        curso1.setTitulo("curso java");
+        curso1.setDescricao("descrição curso java");
+        curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
         curso2.setTitulo("curso javascript");
@@ -35,7 +35,7 @@ public class Main {
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
         bootcamp.setDescricao("Descrição Bootcamp Java Developer");
-        bootcamp.getConteudos().add(curso);
+        bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
