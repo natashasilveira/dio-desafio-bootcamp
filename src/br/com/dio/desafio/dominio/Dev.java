@@ -25,6 +25,11 @@ public class Dev {
         }
     }
 
+    public void cancelarMatricula(Bootcamp bootcamp){
+        this.conteudosInscritos.removeAll(bootcamp.getConteudos());
+        bootcamp.getDevsInscritos().remove(this);
+    }
+
     public double calcularTotalXp(){
         return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
     }
